@@ -1,6 +1,84 @@
 /* */
 
 html {
-  font-family: 'Open Sans';
   font-size: 14px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Nav style */
+nav {
+  font-family: 'Open Sans', cursive;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 20;
+  /*height: 4rem;*/
+}
+
+.nav-item {
+  padding: 0;
+}
+
+.logo {
+  margin: 1rem .5rem 0 0;
+}
+
+/* Active class override from the built-in Bootstrap style */
+#active {
+  color: #399bd1;
+  transition: color 50ms ease-in 50ms;
+  background-color: inherit;
+}
+
+/* Style for the jumbotron carousel */
+.jumbotron-bike {
+  background-image: url("./../../resources/images/jumbotron-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  width: 100%;
+}
+
+.jumbotron h2 {
+  margin-top: 11.85rem;
+  text-align: center;
+  font-family: Monoton, cursive;
+  font-size: 7.1rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.jumbotron p {
+  color: white;
+  max-width: 51.3rem;
+  margin: auto;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Style button in jumbotron */
+.jumbotron a {
+  padding: 1.3rem;
+  width: 11.4rem;
+  margin: 2.8rem 0 11.85rem 0;
+  /*display: inline-block;
+  text-align: center;*/
+}
+
+/* Hide logo image when the browser shrinks to mobile */
+@media (max-width: @screen-sm-min) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+.navbar-nav {
+    /* float: left; */
+    margin: 0;
+    float: none;
+}
 }
